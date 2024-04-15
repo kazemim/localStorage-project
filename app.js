@@ -2,14 +2,19 @@ let input = document.getElementById("input");
 let sum = document.getElementById("sum");
 
 input.addEventListener("input", function () {
-  let sumNumber = Number(input.value) + 4;
+  let inputNumber = Number(input.value);
+  let sumNumber = inputNumber + 4;
 
-  localStorage.mySum = `${sumNumber}`;
-  sum.innerText = localStorage.mySum;
+  localStorage.localInput = `${inputNumber}`;
+  sum.innerText = localStorage.localInput;
+
+  localStorage.localSum = `${sumNumber}`;
+  sum.innerText = localStorage.localSum;
 
 });
 
-sum.innerText = localStorage.mySum
+sum.innerText = localStorage.localSum
+input.value = localStorage.localInput
 
 
 
