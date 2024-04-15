@@ -6,15 +6,14 @@ input.addEventListener("input", function () {
   let sumNumber = inputNumber + 4;
 
   localStorage.localInput = `${inputNumber}`;
-  sum.innerText = localStorage.localInput;
 
   localStorage.localSum = `${sumNumber}`;
   sum.innerText = localStorage.localSum;
 
 });
 
-sum.innerText = localStorage.localSum
-input.value = localStorage.localInput
+input.value = localStorage.localInput;
+sum.innerText = localStorage.localSum;
 
 
 
